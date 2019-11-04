@@ -1,0 +1,11 @@
+<header role="main">
+  <h1>Q Todo List</h1>
+</header>
+<main>
+  <router-outlet *ngIf="ready && !error"></router-outlet>
+  <p *ngIf="!ready" class="loading-message">Loading...</p>
+  <mat-error class="fatal-error" *ngIf="ready && error"><strong>{{ error }}</strong></mat-error>
+</main>
+<footer role="main">
+  <p><a href="//github.com/vjekoart/qtodo" target="_blank">Q Todo</a> &copy; 2019.</p>
+</footer>

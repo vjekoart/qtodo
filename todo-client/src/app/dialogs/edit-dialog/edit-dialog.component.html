@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Edit Todo Item</h1>
+<div mat-dialog-content>
+  <form [formGroup]="updateForm">
+    <mat-form-field>
+      <input matInput type="text" placeholder="ID" formControlName="id" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Job Title" formControlName="jobTitle" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Job Description" formControlName="jobDescription" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Record Created" formControlName="recordCreated" required>
+    </mat-form-field>
+    <mat-error *ngIf="error && error.length">{{ error }}</mat-error>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onCloseClick()">Close</button>
+  <button mat-raised-button color="primary" (click)="onSubmitClick()" [attr.disabled]="updateForm.invalid ? '' : null">Update</button>
+</div>

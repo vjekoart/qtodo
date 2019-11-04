@@ -1,0 +1,17 @@
+header {
+  margin-bottom: 1.5rem;
+  text-align: right;
+
+  > * {
+    margin-left: 0.75rem;
+  }
+}
+
+footer {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.mat-form-field {
+  display: block;
+}

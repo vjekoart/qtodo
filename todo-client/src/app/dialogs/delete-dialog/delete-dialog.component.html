@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Delete Todo Item</h1>
+<div mat-dialog-content>
+  <p *ngIf="data && data.length === 1">Are you sure you want to delete <strong>this</strong> record?</p>
+  <p *ngIf="data && data.length > 1">Are you sure you want to delete <strong>multiple</strong> records?</p>
+  <mat-error *ngIf="error && error.length">{{ error }}</mat-error>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onCloseClick()">Close</button>
+  <button mat-raised-button color="primary" (click)="onSubmitClick()" cdkFocusInitial>Delete</button>
+</div>

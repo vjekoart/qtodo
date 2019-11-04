@@ -1,0 +1,43 @@
+<header>
+  <a mat-raised-button color="warn" (click)="openDeleteDialog(item.id)">Delete Item</a>
+  <a mat-raised-button color="primary" (click)="openEditDialog(item.id)">Edit Item</a>
+</header>
+<div class="information-container">
+  <form *ngIf="item">
+    <mat-form-field>
+      <input matInput
+             type="text"
+             placeholder="ID"
+             disabled=""
+             [(ngModel)]="item.id"
+             [ngModelOptions]="{ standalone: true }">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+             type="text"
+             placeholder="Job Title"
+             disabled=""
+             [(ngModel)]="item.jobTitle"
+             [ngModelOptions]="{ standalone: true }">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+             type="text"
+             placeholder="Job Description"
+             disabled=""
+             [(ngModel)]="item.jobDescription"
+             [ngModelOptions]="{ standalone: true }">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput
+             type="text"
+             placeholder="Record Created"
+             disabled=""
+             [(ngModel)]="item.recordCreated"
+             [ngModelOptions]="{ standalone: true }">
+    </mat-form-field>
+  </form>
+</div>
+<footer>
+  <a mat-raised-button (click)="openDashboard()">Go Back</a>
+</footer>

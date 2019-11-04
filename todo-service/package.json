@@ -1,0 +1,25 @@
+{
+  "name": "qtodo-service",
+  "version": "0.0.0",
+  "main": "server.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjekoart/qtodo.git"
+  },
+  "author": "Vjekoslav Artic <vjekoart@pm.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vjekoart/qtodo/issues"
+  },
+  "scripts": {
+    "run": "node server.js"
+  },
+  "homepage": "https://github.com/vjekoart/qtodo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.3"
+  }
+}
