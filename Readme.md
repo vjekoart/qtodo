@@ -5,7 +5,7 @@ Simple todo list application. Web client is created using Angular 8 + Angular Ma
 
 ## Usage
 
-Firstly, make sure the following software versions are installed:
+Firstly, make sure the following recommended software versions are installed:
 
 - MongoDB, v4.2.1
 - Node.js, v12.13.0
@@ -80,7 +80,7 @@ Total time: 11h
         * `showError(message: string)`
 3. **Development of backend service, 03:00**
     * Initialize `package.json` and add dependencies
-    * Create `index.js` file with the initialization, API routes and server functionalities
+    * Create `server.js` file with the initialization, API routes and server functionalities
     * Create `data-service.js` file with _DataService_ class which has the following methods:
         * `constructor(configuration)`, create connection which is going to be used by all the class methods
         * `getOne(id: Number)`
